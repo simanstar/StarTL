@@ -156,7 +156,7 @@ void * __second_level_alloc<threads, inst>::refill(size_t n) {
   auto chunk = chunk_alloc(n, nobjs);
   obj * volatile * my_free_list;
   if (1 == nobjs ) return chunk;
-  my_free_list = free_list = FREELIST_INDEX(n);
+  my_free_list = free_list + FREELIST_INDEX(n);
   auto result = (obj*)chunk; //这一块准备返回给客户端
   auto next_obj = (obj*)(chunk + n);
   *my_free_list = next_obj;
@@ -224,7 +224,9 @@ char * __second_level_alloc<threads, inst>::chunk_alloc(size_t size, int &nobjs)
     }
     heap_size += bytes_to_get;
     end_free = start_free + bytes_to_get;
-
+    auto old_start_free = start_free;
+    start_free += total_bytes;
+    return old_start_free;
   }
 }
 
