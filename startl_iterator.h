@@ -11,7 +11,7 @@ struct output_iterator_tag {};
 struct forward_iterator_tag : public input_iterator_tag {};
 struct bidirectional_iterator_tag : public forward_iterator_tag {};
 struct random_access_iterator_tag : public bidirectional_iterator_tag {};
-
+//如果迭代器继承以下这个，则导致reference等类型不能识别，需要显示加上typename iterator<>:: 更加麻烦，有待解决
 template<class Category, class T, class Distance = ptrdiff_t, class Pointer = T *, class Reference = T &>
 struct iterator {
   typedef Category iterator_category;
@@ -19,6 +19,7 @@ struct iterator {
   typedef Distance difference_type;
   typedef Pointer pointer;
   typedef Reference reference;
+  typedef size_t size_type;
 };
 
 template<class Iterator>

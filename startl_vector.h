@@ -19,16 +19,14 @@ public:
   typedef size_t size_type;
   typedef ptrdiff_t difference_type;
 private:
-  int i = 0;
   iterator start;         //表示目前使用空间的头
   iterator finish;       //表示目前使用空间的尾
   iterator end_of_storage;//表示目前可用的尾
-  Alloc<T> data_allocator;
 
   void insert_aux(iterator position, const T& x);
   void deallocate() {
     if (start)
-      data_allocator.deallocate(start, end_of_storage - start);
+      Alloc::deallocate(start, end_of_storage - start);
   }
   void fill_initialize(size_type n, const T& value) {
     start = allocate_and_fill(n, value);
@@ -111,7 +109,7 @@ public:
 
 protected:
   iterator allocate_and_fill(size_type n, const T& x) {
-    iterator result = data_allocator.allocate(n);
+    iterator result = Alloc::allocate(n);
     uninitialized_fill_n(result, n, x);
     return result;
   }
@@ -129,7 +127,7 @@ void vector<T, Alloc>::insert_aux(iterator position, const T &x) {
   else {      //已无备用空间
     const size_type old_size = size();
     const size_type len = old_size != 0? 2 * old_size : 1;
-    iterator new_start = data_allocator.allocate(len);
+    iterator new_start = Alloc::allocate(len);
     iterator new_finish = new_start;
     try {
       //原vector的内容拷贝到新vector
@@ -140,7 +138,7 @@ void vector<T, Alloc>::insert_aux(iterator position, const T &x) {
     } catch (...) {
       //rollback
       destroy(new_start, new_finish);
-      data_allocator.deallocate(new_start, len);
+      Alloc::deallocate(new_start, len);
       throw ;
     }
     destroy(begin(), end());
@@ -182,7 +180,7 @@ void vector<T, Alloc>::insert(iterator position, const size_type n, const T& x) 
       const size_type old_size = size();
       const size_type len = old_size + max(old_size, n);
       //以配置新的vector空间
-      iterator new_start = data_allocator.allocate(len);
+      iterator new_start = Alloc::allocate(len);
       iterator new_finish = new_start;
       try {
         new_finish = uninitialized_copy(start, position, new_start);
@@ -190,7 +188,7 @@ void vector<T, Alloc>::insert(iterator position, const size_type n, const T& x) 
         new_finish = uninitialized_copy(position, finish, new_finish);
       } catch (...) {
         destroy(new_start, new_finish);
-        data_allocator.deallocate(new_start, len);
+        Alloc::deallocate(new_start, len);
         throw;
       }
       destroy(start, finish);
