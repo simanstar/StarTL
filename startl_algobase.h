@@ -16,7 +16,7 @@ OutputIterator fill_n(OutputIterator first, Size n, const T &value) {
 };
 
 template<class T>
-inline T &max(T &v1, T &v2) {
+inline const T &max(const T &v1, const T &v2) {
   return v1 > v2 ? v1 : v2;
 }
 
