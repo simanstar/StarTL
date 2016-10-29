@@ -28,13 +28,13 @@ public:
 
   static const_pointer address(const_reference x);//非const转const指针?????怎么转
   //以下实现全部按n的大小分为一级和二级
-  static pointer allocate(size_type n, const void * = 0) {
+  static pointer allocate(size_type n = 1, const void * = 0) {
     auto need_bytes = n * sizeof(T);
     if (need_bytes > 128) return (pointer) __first_level_alloc<0>::allocate(need_bytes);
     else return (pointer) __second_level_alloc<0, 0>::allocate(need_bytes);
   }
 
-  static void deallocate(pointer p, size_type n) {
+  static void deallocate(pointer p, size_type n = 1) {
     auto need_bytes = n * sizeof(T);
     if (need_bytes > 128) return __first_level_alloc<0>::deallocate(p);
     else return __second_level_alloc<0, 0>::deallocate(p, need_bytes);

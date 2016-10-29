@@ -76,5 +76,14 @@ void fill(Iterator first,const Iterator& last,const T& x) {
     *first = x;
 }
 
+namespace __startl {
+template <class T>
+void swap(T &a, T &b) {
+  T temp = a;
+  a = b;
+  b = temp;
+}
+}
+
 }
 #endif //STARTL_STARTL_ALGOBASE_H

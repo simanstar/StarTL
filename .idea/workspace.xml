@@ -12,12 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0a6f079-9abd-4426-a85e-552bc41c4719" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/test_deque.cpp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/StarTL.iml" afterPath="$PROJECT_DIR$/.idea/StarTL.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/memory.h" afterPath="$PROJECT_DIR$/memory.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startl_algobase.h" afterPath="$PROJECT_DIR$/startl_algobase.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/startl_uninitialized.h" afterPath="$PROJECT_DIR$/startl_uninitialized.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/CMakeLists.txt" afterPath="$PROJECT_DIR$/test/CMakeLists.txt" />
     </list>
     <ignored path="StarTL.iws" />
@@ -39,63 +37,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="startl_iterator.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startl_iterator.h">
+      <file leaf-file-name="test_deque.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_deque.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
-              <folding>
-                <element signature="e#1894#1910#0" expanded="true" />
-                <element signature="e#2116#2132#0" expanded="true" />
-                <element signature="e#2324#2345#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stddef.h" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="146" column="25" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
+            <state relative-caret-position="459">
+              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="startl_deque.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startl_deque.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="393" column="68" selection-start-line="393" selection-start-column="68" selection-end-line="393" selection-end-column="68" />
-              <folding>
-                <element signature="e#105#124#0" expanded="true" />
-                <element signature="e#215#239#0" expanded="true" />
-                <element signature="e#3087#3159#0" expanded="true" />
-                <element signature="e#3105#3114#0" expanded="true" />
-                <element signature="e#6742#6799#0" expanded="true" />
-                <element signature="e#6760#6769#0" expanded="true" />
-                <element signature="e#7215#7272#0" expanded="true" />
-                <element signature="e#7233#7242#0" expanded="true" />
-                <element signature="e#8013#8070#0" expanded="true" />
-                <element signature="e#8031#8040#0" expanded="true" />
-                <element signature="e#8429#8486#0" expanded="true" />
-                <element signature="e#8447#8456#0" expanded="true" />
-                <element signature="e#8928#8985#0" expanded="true" />
-                <element signature="e#8946#8955#0" expanded="true" />
-                <element signature="e#10201#10258#0" expanded="true" />
-                <element signature="e#10219#10228#0" expanded="true" />
-                <element signature="e#10464#10521#0" expanded="true" />
-                <element signature="e#10482#10491#0" expanded="true" />
-                <element signature="e#10695#10752#0" expanded="true" />
-                <element signature="e#10713#10722#0" expanded="true" />
-                <element signature="e#11354#11411#0" expanded="true" />
-                <element signature="e#11372#11381#0" expanded="true" />
-                <element signature="e#11887#11944#0" expanded="true" />
-                <element signature="e#11905#11914#0" expanded="true" />
-                <element signature="e#13021#13078#0" expanded="true" />
-                <element signature="e#13039#13048#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -103,20 +50,74 @@
       <file leaf-file-name="startl_uninitialized.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startl_uninitialized.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
-              <folding />
+            <state relative-caret-position="731">
+              <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
+              <folding>
+                <element signature="e#1319#1363#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_deque.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/test_deque.cpp">
+      <file leaf-file-name="startl_pair.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startl_pair.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="238">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
               <folding>
-                <element signature="e#44#69#0" expanded="true" />
+                <element signature="e#132#152#0" expanded="true" />
+                <element signature="e#298#318#0" expanded="true" />
+                <element signature="e#429#449#0" expanded="true" />
+                <element signature="e#546#566#0" expanded="true" />
+                <element signature="e#718#738#0" expanded="true" />
+                <element signature="e#881#901#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startl_rbtree.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/startl_rbtree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+              <folding>
+                <element signature="e#107#126#0" expanded="true" />
+                <element signature="e#807#820#0" expanded="true" />
+                <element signature="e#3012#3021#0" expanded="true" />
+                <element signature="e#3506#3515#0" expanded="true" />
+                <element signature="e#4218#4318#0" expanded="true" />
+                <element signature="e#4284#4293#0" expanded="true" />
+                <element signature="e#12800#12821#0" expanded="true" />
+                <element signature="e#13046#13135#0" expanded="true" />
+                <element signature="e#13112#13121#0" expanded="true" />
+                <element signature="e#13483#13572#0" expanded="true" />
+                <element signature="e#13549#13558#0" expanded="true" />
+                <element signature="e#14288#14377#0" expanded="true" />
+                <element signature="e#14354#14363#0" expanded="true" />
+                <element signature="e#14387#14408#0" expanded="true" />
+                <element signature="e#14592#14681#0" expanded="true" />
+                <element signature="e#14658#14667#0" expanded="true" />
+                <element signature="e#15531#15620#0" expanded="true" />
+                <element signature="e#15597#15606#0" expanded="true" />
+                <element signature="e#16241#16330#0" expanded="true" />
+                <element signature="e#16307#16316#0" expanded="true" />
+                <element signature="e#16630#16719#0" expanded="true" />
+                <element signature="e#16696#16705#0" expanded="true" />
+                <element signature="e#16927#17016#0" expanded="true" />
+                <element signature="e#16993#17002#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_set.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_set.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+              <folding>
+                <element signature="e#44#67#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,31 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ostream" pinned="false" current-in-tab="false">
-        <entry file="file:///usr/include/c++/4.8/ostream">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="563" column="4" selection-start-line="563" selection-start-column="4" selection-end-line="563" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="startl_algobase.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/startl_algobase.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="startl_list.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/startl_list.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1768">
-              <caret line="128" column="37" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+            <state relative-caret-position="646">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
               <folding>
                 <element signature="e#102#130#0" expanded="true" />
                 <element signature="e#215#224#0" expanded="true" />
@@ -180,13 +161,52 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="memory.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/memory.h">
+      <file leaf-file-name="startl_iterator.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startl_iterator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="36" column="24" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="24" />
+            <state relative-caret-position="1581">
+              <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startl_vector.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startl_vector.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="19" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="19" />
               <folding>
-                <element signature="e#260#269#0" expanded="true" />
+                <element signature="e#106#125#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="startl_set.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/startl_set.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
+              <folding>
+                <element signature="e#101#127#0" expanded="true" />
+                <element signature="e#207#290#0" expanded="true" />
+                <element signature="e#256#265#0" expanded="true" />
+                <element signature="e#1277#1298#0" expanded="true" />
+                <element signature="e#1412#1433#0" expanded="true" />
+                <element signature="e#2478#2499#0" expanded="true" />
+                <element signature="e#3413#3475#0" expanded="true" />
+                <element signature="e#3451#3461#0" expanded="true" />
+                <element signature="e#3539#3601#0" expanded="true" />
+                <element signature="e#3577#3587#0" expanded="true" />
+                <element signature="e#3664#3726#0" expanded="true" />
+                <element signature="e#3702#3712#0" expanded="true" />
+                <element signature="e#3792#3850#0" expanded="true" />
+                <element signature="e#3828#3837#0" expanded="true" />
+                <element signature="e#3979#4037#0" expanded="true" />
+                <element signature="e#4015#4024#0" expanded="true" />
+                <element signature="e#4166#4224#0" expanded="true" />
+                <element signature="e#4202#4211#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,12 +230,18 @@
         <option value="$PROJECT_DIR$/startl_iterator.h" />
         <option value="$PROJECT_DIR$/startl_list.h" />
         <option value="$PROJECT_DIR$/test/test_list.cpp" />
-        <option value="$PROJECT_DIR$/memory.h" />
-        <option value="$PROJECT_DIR$/test/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/startl_algobase.h" />
         <option value="$PROJECT_DIR$/startl_uninitialized.h" />
         <option value="$PROJECT_DIR$/startl_deque.h" />
         <option value="$PROJECT_DIR$/test/test_deque.cpp" />
+        <option value="$PROJECT_DIR$/memory.h" />
+        <option value="$PROJECT_DIR$/test_rbtree.cpp" />
+        <option value="$PROJECT_DIR$/test/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/startl_function.h" />
+        <option value="$PROJECT_DIR$/startl_pair.h" />
+        <option value="$PROJECT_DIR$/startl_algobase.h" />
+        <option value="$PROJECT_DIR$/startl_set.h" />
+        <option value="$PROJECT_DIR$/startl_rbtree.h" />
+        <option value="$PROJECT_DIR$/test/test_set.cpp" />
       </list>
     </option>
   </component>
@@ -228,9 +254,31 @@
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="x" value="1920" />
-    <option name="y" value="630" />
+    <option name="y" value="689" />
     <option name="width" value="1366" />
     <option name="height" value="772" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>C/C++</id>
+          </State>
+          <State>
+            <id>FunctionsC/C++</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>NotImplementedFunctions</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -295,7 +343,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -539,16 +587,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="630" width="1366" height="772" extended-state="6" />
+    <frame x="1920" y="689" width="1366" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17057101" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16617863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47839046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38599107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3457526" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09538003" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27272728" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.041728765" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19253294" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -558,7 +606,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935917" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -612,51 +660,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/startl_iterator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startl_construct.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startl_alloc.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="35" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startl_uninitialized.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memory.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <element signature="e#260#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/startl_construct.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -682,9 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="e#260#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -707,9 +707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
-          <folding>
-            <element signature="e#260#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -739,9 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#260#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -770,9 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
-          <folding>
-            <element signature="e#260#269#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -848,34 +839,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1887">
-          <caret line="111" column="38" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startl_alloc.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="e#42#61#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,50 +860,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/include/c++/4.8/ostream">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
+        <state relative-caret-position="9571">
           <caret line="563" column="4" selection-start-line="563" selection-start-column="4" selection-end-line="563" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/memory.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="646">
+          <caret line="38" column="62" selection-start-line="38" selection-start-column="62" selection-end-line="38" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startl_alloc.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_rbtree.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#42#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startl_algobase.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startl_deque.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2159">
+          <caret line="127" column="18" selection-start-line="127" selection-start-column="18" selection-end-line="127" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startl_function.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="2482">
           <caret line="146" column="25" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startl_iterator.h">
+    <entry file="file://$PROJECT_DIR$/startl_vector.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        <state relative-caret-position="323">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="19" />
           <folding>
-            <element signature="e#1894#1910#0" expanded="true" />
-            <element signature="e#2116#2132#0" expanded="true" />
-            <element signature="e#2324#2345#0" expanded="true" />
+            <element signature="e#106#125#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startl_list.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1768">
-          <caret line="128" column="37" selection-start-line="128" selection-start-column="37" selection-end-line="128" selection-end-column="37" />
+        <state relative-caret-position="646">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
           <folding>
             <element signature="e#102#130#0" expanded="true" />
             <element signature="e#215#224#0" expanded="true" />
@@ -959,73 +966,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/memory.h">
+    <entry file="file://$PROJECT_DIR$/test/test_deque.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="36" column="24" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="24" />
-          <folding>
-            <element signature="e#260#269#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="459">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/startl_algobase.h">
+    <entry file="file://$PROJECT_DIR$/startl_iterator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state relative-caret-position="1581">
+          <caret line="93" column="45" selection-start-line="93" selection-start-column="45" selection-end-line="93" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/startl_uninitialized.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="94" column="20" selection-start-line="94" selection-start-column="20" selection-end-line="94" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/startl_deque.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="393" column="68" selection-start-line="393" selection-start-column="68" selection-end-line="393" selection-end-column="68" />
+        <state relative-caret-position="731">
+          <caret line="43" column="52" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
           <folding>
-            <element signature="e#105#124#0" expanded="true" />
-            <element signature="e#215#239#0" expanded="true" />
-            <element signature="e#3087#3159#0" expanded="true" />
-            <element signature="e#3105#3114#0" expanded="true" />
-            <element signature="e#6742#6799#0" expanded="true" />
-            <element signature="e#6760#6769#0" expanded="true" />
-            <element signature="e#7215#7272#0" expanded="true" />
-            <element signature="e#7233#7242#0" expanded="true" />
-            <element signature="e#8013#8070#0" expanded="true" />
-            <element signature="e#8031#8040#0" expanded="true" />
-            <element signature="e#8429#8486#0" expanded="true" />
-            <element signature="e#8447#8456#0" expanded="true" />
-            <element signature="e#8928#8985#0" expanded="true" />
-            <element signature="e#8946#8955#0" expanded="true" />
-            <element signature="e#10201#10258#0" expanded="true" />
-            <element signature="e#10219#10228#0" expanded="true" />
-            <element signature="e#10464#10521#0" expanded="true" />
-            <element signature="e#10482#10491#0" expanded="true" />
-            <element signature="e#10695#10752#0" expanded="true" />
-            <element signature="e#10713#10722#0" expanded="true" />
-            <element signature="e#11354#11411#0" expanded="true" />
-            <element signature="e#11372#11381#0" expanded="true" />
-            <element signature="e#11887#11944#0" expanded="true" />
-            <element signature="e#11905#11914#0" expanded="true" />
-            <element signature="e#13021#13078#0" expanded="true" />
-            <element signature="e#13039#13048#0" expanded="true" />
+            <element signature="e#1319#1363#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_deque.cpp">
+    <entry file="file://$PROJECT_DIR$/startl_set.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="203">
+          <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
           <folding>
-            <element signature="e#44#69#0" expanded="true" />
+            <element signature="e#101#127#0" expanded="true" />
+            <element signature="e#207#290#0" expanded="true" />
+            <element signature="e#256#265#0" expanded="true" />
+            <element signature="e#1277#1298#0" expanded="true" />
+            <element signature="e#1412#1433#0" expanded="true" />
+            <element signature="e#2478#2499#0" expanded="true" />
+            <element signature="e#3413#3475#0" expanded="true" />
+            <element signature="e#3451#3461#0" expanded="true" />
+            <element signature="e#3539#3601#0" expanded="true" />
+            <element signature="e#3577#3587#0" expanded="true" />
+            <element signature="e#3664#3726#0" expanded="true" />
+            <element signature="e#3702#3712#0" expanded="true" />
+            <element signature="e#3792#3850#0" expanded="true" />
+            <element signature="e#3828#3837#0" expanded="true" />
+            <element signature="e#3979#4037#0" expanded="true" />
+            <element signature="e#4015#4024#0" expanded="true" />
+            <element signature="e#4166#4224#0" expanded="true" />
+            <element signature="e#4202#4211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_set.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+          <folding>
+            <element signature="e#44#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startl_pair.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="e#132#152#0" expanded="true" />
+            <element signature="e#298#318#0" expanded="true" />
+            <element signature="e#429#449#0" expanded="true" />
+            <element signature="e#546#566#0" expanded="true" />
+            <element signature="e#718#738#0" expanded="true" />
+            <element signature="e#881#901#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/startl_rbtree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="47" column="46" selection-start-line="47" selection-start-column="46" selection-end-line="47" selection-end-column="46" />
+          <folding>
+            <element signature="e#107#126#0" expanded="true" />
+            <element signature="e#807#820#0" expanded="true" />
+            <element signature="e#3012#3021#0" expanded="true" />
+            <element signature="e#3506#3515#0" expanded="true" />
+            <element signature="e#4218#4318#0" expanded="true" />
+            <element signature="e#4284#4293#0" expanded="true" />
+            <element signature="e#12800#12821#0" expanded="true" />
+            <element signature="e#13046#13135#0" expanded="true" />
+            <element signature="e#13112#13121#0" expanded="true" />
+            <element signature="e#13483#13572#0" expanded="true" />
+            <element signature="e#13549#13558#0" expanded="true" />
+            <element signature="e#14288#14377#0" expanded="true" />
+            <element signature="e#14354#14363#0" expanded="true" />
+            <element signature="e#14387#14408#0" expanded="true" />
+            <element signature="e#14592#14681#0" expanded="true" />
+            <element signature="e#14658#14667#0" expanded="true" />
+            <element signature="e#15531#15620#0" expanded="true" />
+            <element signature="e#15597#15606#0" expanded="true" />
+            <element signature="e#16241#16330#0" expanded="true" />
+            <element signature="e#16307#16316#0" expanded="true" />
+            <element signature="e#16630#16719#0" expanded="true" />
+            <element signature="e#16696#16705#0" expanded="true" />
+            <element signature="e#16927#17016#0" expanded="true" />
+            <element signature="e#16993#17002#0" expanded="true" />
           </folding>
         </state>
       </provider>
