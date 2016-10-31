@@ -105,7 +105,7 @@ public:
   pair<iterator, iterator> equal_range(const key_type& x) const {
     return t.equal_range(x);
   }
-  //以下需经过一系列语法测试,要改成以下才行，不懂
+  //为什么需要友元
   template <class _Key, class _Compare, template <class _E> class _Alloc>
   friend bool operator == (const set&, const set&);
   template <class _Key, class _Compare, template <class _E> class _Alloc>

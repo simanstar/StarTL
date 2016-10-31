@@ -1,3 +1,3 @@
-set(SOURCE_FILES test_set.cpp)
+set(SOURCE_FILES test_map.cpp)
 add_executable(StarTL ${SOURCE_FILES})
 target_link_libraries(StarTL)

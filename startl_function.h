@@ -30,5 +30,10 @@ struct less : public binary_function<T, T, bool> {
   bool operator()(const T& x, const T& y) const {return x < y;}
 };
 
+template <class T>
+struct select1st : public unary_function<T, typename T::first_type> {
+  const typename T::first_type& operator()(const T& x) const { return x.first; }
+};
+
 }
 #endif //STARTL_STARTL_FUNCTION_H

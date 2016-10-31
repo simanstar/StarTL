@@ -12,27 +12,27 @@ struct pair {
   typedef T1 first_type;
   typedef T2 second_type;
 
-  first_type first_value;
-  second_type second_value;
+  first_type first;
+  second_type second;
 
   pair() {}
 
   template <class U1, class U2>
-  pair(const pair<U1, U2>& atr) : first_value(atr.first_value), second_value(atr.second_value) {}
+  pair(const pair<U1, U2>& atr) : first(atr.first), second(atr.second) {}
 
   template <class U1, class U2>
-  pair(const U1& a, const U2& b) : first_value(a), second_value(b) {}
-  //返回值语法有问题吗？
+  pair(const U1& a, const U2& b) : first(a), second(b) {}
+
   template <class U1, class U2>
   pair& operator=(const pair<U1, U2>& atr) {
-    first_value = atr.first_value;
-    second_value = atr.second_value;
+    first = atr.first;
+    second = atr.second;
     return *this;
   }
 
   template <class U1, class U2>
   bool operator==(const pair<U1, U2>& atr) {
-    return first_value == atr.first_value && second_value == atr.second_value;
+    return first == atr.first && second == atr.second;
   }
 
 };

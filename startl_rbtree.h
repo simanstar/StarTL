@@ -95,7 +95,7 @@ struct __rb_tree_iterator : public __rb_tree_iterator_base {
   typedef value_type& reference;
   typedef __rb_tree_iterator<T> iterator;
   typedef __rb_tree_iterator<const T> const_iterator;
-  typedef __rb_tree_iterator self;                       //原为__rb_tree_iterator<T> self，改为__rb_tree_iterator是否可行？
+  typedef __rb_tree_iterator self;                       //原为__rb_tree_iterator<T> self，改为__rb_tree_iterator是否可行？ 可行!
   typedef __rb_tree_node<T>* link_type;
 
   __rb_tree_iterator() {}
@@ -310,6 +310,8 @@ private:
     for (n = 0; first != last; ++first)
       ++n;
   }
+
+  bool _compare_tree(const link_type & st1, const link_type & st2);
 public:
   rb_tree(const Compare& comp = Compare())
       : node_count(0), key_compare(comp) {init();}
@@ -318,7 +320,12 @@ public:
     put_node(header);
   }
 
-  self& operator=(const self& x);
+  bool operator==(const self& x) {
+    if (node_count != x.node_count)
+      return 0;
+    return _compare_tree(root(), x.root());
+  }
+
   Compare key_comp() const {return key_compare;}
   iterator begin() const {return leftmost();}
   iterator end() const {return header;}
@@ -347,9 +354,9 @@ public:
   size_type erase(const key_type& k) {
     size_type n = 0;
     pair<iterator, iterator> p = equal_range(k);
-    distance(p.first_value, p.second_value, n);
+    distance(p.first, p.second, n);
     if (n  > 0)
-      erase(p.first_value, p.second_value);
+      erase(p.first, p.second);
     return n;
 
   }
@@ -491,15 +498,15 @@ rb_tree<Key, Value, KeyOfValue, Compare, Alloc>::find(const Key &k) const {
     else
       x = right(x);
   iterator j = iterator(y);
-  return (/*j == end() ||*/ key_compare(k, key(j.node))) ? end() : j;           //j == end()是什么情况，我觉得直接
-}                                                                           //key_compare(k, key(j.node))这个可以了
+  return (j == end() || key_compare(k, key(j.node))) ? end() : j;           //如果不加j == end()条件,j为end时j.node就会报错
+}
 
 template <class Key, class Value, class KeyOfValue, class Compare, template<class E> class Alloc >
 typename rb_tree<Key, Value, KeyOfValue, Compare, Alloc>::size_type
 rb_tree<Key, Value, KeyOfValue, Compare, Alloc>::count(const key_type &k) const {
   pair<const_iterator, const_iterator> p = equal_range(k);
   size_type n = 0;
-  distance(p.first_value, p.second_value, n);
+  distance(p.first, p.second, n);
   return n;
 }
 
@@ -639,6 +646,17 @@ template <class Key, class Value, class KeyOfValue, class Compare, template<clas
     if (x) x->color = __rb_tree_black;
   }
   return y;
+}
+
+template <class Key, class Value, class KeyOfValue, class Compare, template<class E> class Alloc >
+bool rb_tree<Key, Value, KeyOfValue, Compare, Alloc>::_compare_tree(const link_type & st1, const link_type & st2) {
+  if (st1 == nullptr || st2 == nullptr) {
+    return st1 == nullptr && st2 == nullptr ? 1 : 0 ;
+  }
+  if (st1->value_field == st2->value_field) {
+    return _compare_tree((link_type)st1->left, (link_type)st2->left) &&
+           _compare_tree((link_type)st1->right, (link_type)st2->right);
+  }
 }
 
 }
