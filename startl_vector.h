@@ -8,16 +8,20 @@
 #include "memory.h"
 #include "startl_algobase.h"
 #include "startl_iterator.h"
+#include "startl_uninitialized.h"
+
 namespace startl {
-template <class T, template <class T> class Alloc = Allocator >
+template <class T, template <class E> class Alloc = Allocator >
 class vector {
 public:
   typedef T value_type;
   typedef value_type * pointer;
   typedef T * iterator;
   typedef value_type & reference;
+  typedef const value_type & const_reference;
   typedef size_t size_type;
   typedef ptrdiff_t difference_type;
+  typedef Alloc<T> value_allocator;
 private:
   iterator start;         //表示目前使用空间的头
   iterator finish;       //表示目前使用空间的尾
@@ -26,7 +30,7 @@ private:
   void insert_aux(iterator position, const T& x);
   void deallocate() {
     if (start)
-      Alloc::deallocate(start, end_of_storage - start);
+      value_allocator::deallocate(start, end_of_storage - start);
   }
   void fill_initialize(size_type n, const T& value) {
     start = allocate_and_fill(n, value);
@@ -51,6 +55,19 @@ public:
   reference operator[](size_type n ) {
     return *(begin() + n);
   }
+
+  const_reference operator[](size_type n ) const {
+    return *(begin() + n);
+  }
+
+  reference operator=(const vector& another) {
+    clear();
+    for (auto atr_itr = another.begin(); atr_itr != another.end(); ++atr_itr)
+      push_back(*atr_itr);
+  }
+
+  template <class _T,  template <class E> class _Alloc>
+  friend bool operator==(const vector&, const vector&);
 
   void insert(iterator position, size_type n, const T& x);
   vector() : start(nullptr), finish(nullptr), end_of_storage(nullptr) {}
@@ -106,10 +123,34 @@ public:
   }
   void resize(size_type new_size) {resize(new_size, T());}
   void clear() {erase(begin(), end());}
+  void swap(vector& atr) {
+    vector temp = atr;
+    atr = *this;
+    *this = temp;
+  }
+  void reserve(size_type n) {
+    //以配置新的vector空间
+    if (size_type(end_of_storage - start) >= n) //已有足够的空间
+      return;
+    iterator new_start = value_allocator::allocate(n);
+    iterator new_finish = new_start;
+    try {
+      new_finish = uninitialized_copy(start, finish, new_start);;
+    } catch (...) {
+      destroy(new_start, new_finish);
+      value_allocator::deallocate(new_start, n);
+      throw;
+    }
+    destroy(start, finish);
+    deallocate();
+    start = new_start;
+    finish = new_finish;
+    end_of_storage = new_start + n;
+  }
 
 protected:
   iterator allocate_and_fill(size_type n, const T& x) {
-    iterator result = Alloc::allocate(n);
+    iterator result = value_allocator::allocate(n);
     uninitialized_fill_n(result, n, x);
     return result;
   }
@@ -127,7 +168,7 @@ void vector<T, Alloc>::insert_aux(iterator position, const T &x) {
   else {      //已无备用空间
     const size_type old_size = size();
     const size_type len = old_size != 0? 2 * old_size : 1;
-    iterator new_start = Alloc::allocate(len);
+    iterator new_start = value_allocator::allocate(len);
     iterator new_finish = new_start;
     try {
       //原vector的内容拷贝到新vector
@@ -138,7 +179,7 @@ void vector<T, Alloc>::insert_aux(iterator position, const T &x) {
     } catch (...) {
       //rollback
       destroy(new_start, new_finish);
-      Alloc::deallocate(new_start, len);
+      value_allocator::deallocate(new_start, len);
       throw ;
     }
     destroy(begin(), end());
@@ -180,7 +221,7 @@ void vector<T, Alloc>::insert(iterator position, const size_type n, const T& x) 
       const size_type old_size = size();
       const size_type len = old_size + max(old_size, n);
       //以配置新的vector空间
-      iterator new_start = Alloc::allocate(len);
+      iterator new_start = value_allocator::allocate(len);
       iterator new_finish = new_start;
       try {
         new_finish = uninitialized_copy(start, position, new_start);
@@ -188,7 +229,7 @@ void vector<T, Alloc>::insert(iterator position, const size_type n, const T& x) 
         new_finish = uninitialized_copy(position, finish, new_finish);
       } catch (...) {
         destroy(new_start, new_finish);
-        Alloc::deallocate(new_start, len);
+        value_allocator::deallocate(new_start, len);
         throw;
       }
       destroy(start, finish);
@@ -198,7 +239,19 @@ void vector<T, Alloc>::insert(iterator position, const size_type n, const T& x) 
       end_of_storage = new_start + len;
     }
   }
-};
+}
+
+template <class T, template <class E>  class Alloc>
+bool operator==(const vector<T, Alloc>& v1, const vector<T, Alloc>& v2) {
+  bool is_equal = false;
+  auto v1_first = v1.begin();
+  auto v2_first = v2.begin();
+  for(;v1_first != v1.end() && v2_first != v2.end() && *v1_first == *v2_first;++v1_first, ++v2_first);
+  if(v1_first == v1.end() && v2_first == v2.end())
+    is_equal = true;
+
+  return is_equal;
+}
 
 }
 #endif //STARTL_STARTL_VECTOR_H

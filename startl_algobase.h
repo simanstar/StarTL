@@ -85,5 +85,7 @@ void swap(T &a, T &b) {
 }
 }
 
+
+
 }
 #endif //STARTL_STARTL_ALGOBASE_H

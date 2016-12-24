@@ -21,6 +21,21 @@ struct binary_function {
 };
 
 template <class T>
+struct equal_to : public binary_function<T, T, bool> {
+  bool operator()(const T& x, const T& y) const {return x == y;}
+};
+
+template <>
+struct equal_to<char*> : public binary_function<char*, char*, bool> {
+  bool operator()(const char* x, const char* y) const {return strcmp(x, y) == 0;}
+};
+
+template <>
+struct equal_to<const char*> : public binary_function<const char*, const char*, bool> {
+  bool operator()(const char* x, const char* y) const {return strcmp(x, y) == 0;}
+};
+
+template <class T>
 struct identity : public unary_function<T, T> {
   const T& operator()(const T& x) const { return x; }
 };
