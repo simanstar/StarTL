@@ -1,23 +1,6 @@
 set(SOURCE_FILES
-        test_hashset.cpp
-        ../startl_hashfun.h
-        ../startl_hashset.h
-        ../startl_hashtable.h
-        ../memory.h
-        ../startl_algobase.h
-        ../startl_alloc.h
-        ../startl_construct.h
-        ../startl_deque.h
-        ../startl_function.h
-        ../startl_iterator.h
-        ../startl_list.h
-        ../startl_map.h
-        ../startl_pair.h
-        ../startl_rbtree.h
-        ../startl_uninitialized.h
-        ../startl_set.h
-        ../startl_vector.h
-        ../type_traits.h
-        )
+           test_leetcode.cpp)
 add_executable(StarTL ${SOURCE_FILES})
 target_link_libraries(StarTL)
+
+include_directories(../oms_api_sbe)

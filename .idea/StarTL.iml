@@ -2,27 +2,9 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/startl_map.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_uninitialized.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_construct.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_vector.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_deque.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/type_traits.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_hashtable.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_hashfun.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_alloc.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/test/test_hashset.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_list.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_set.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_function.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_algobase.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_hashset.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_iterator.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/memory.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_rbtree.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/startl_pair.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/test_leetcode.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/test/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

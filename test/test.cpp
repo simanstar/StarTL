@@ -12,6 +12,7 @@ using std::endl;
 int main() {
   size_t i;
   vector<int> iv(2,9);
+  //cout << vector(2,9).size() << endl;
   cout << "size = " << iv.size() << endl;
   cout << "capacity = " << iv.capacity() << endl;
 
